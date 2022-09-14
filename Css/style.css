@@ -1,0 +1,587 @@
+
+/* Uniwersalne dla każdej z podstron*/
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+/* Uniwersalne dla każdej z podstron*/
+body{
+    margin: 0;
+    padding: 0; 
+    position: relative;
+    min-height: 100%;
+    padding-bottom:262px; /* bo stopka ma 264px, bez tego stopka zakrywa czesc tresci na stronie*/
+}
+/* Uniwersalne dla każdej z podstron*/
+html {
+    height: 100%;
+
+  }
+/* Uniwersalne dla każdej z podstron*/
+header{
+    background: #a0a0a0;
+    text-align: center;
+    height: 180px;
+}
+header img{
+    margin: 10px 0 0 0;
+    width: 500px;
+    height:auto;
+}
+/* Uniwersalne dla każdej z podstron*/
+.menu{
+    width: 100%;
+    background:#a0a0a0;
+    display: flex;  
+}
+.menu a{
+    width: 20%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    border-bottom: solid 5px #a0a0a0; /* Po to aby po najechaniu nie zwiększła się przetrzeń spowodowania nowym porderem*/
+    padding: 5px 0 0 0;
+}
+.menu a:hover{
+    border-bottom: solid 5px #ffcb4f;
+    transition-duration:1s;
+}
+.menu a:hover i{
+    color: #ffcb4f;
+    transition-duration:1s;
+}
+
+/* Strona GŁówna*/
+.slider{
+    margin: 50px 0 50px 0;
+    width: 100%;
+    text-align: center;
+} 
+.slider img{
+    margin: 50px 0 50px 0;
+    height: 678px;
+    width: auto;
+}
+
+/* Strona GŁówna*/
+
+/* Pierwszy box z treścią na stronie głównej*/
+#home-main-1{
+    text-align: center;
+    width: 50%;
+    background: rgb(221, 221, 221);
+    margin: 0;
+    padding-top: 3em;
+    position: relative;
+    min-height: 540px;
+    box-sizing: border-box;
+}
+#home-main-1 h1{
+    color: #f5b726;
+    margin: 0;
+    padding: 60px 0 0 0;
+}
+#home-main-1 p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 2px 50px 0 20px;
+    margin-bottom: 25px;
+}
+#home-main-1 img{
+    height: 200px;
+    width: auto;
+}
+
+/* Drugi box z trescią na stronie głównej*/
+#home-main-2{
+    text-align: center;
+    width: 50%;
+    border: #f5b726 solid 6px;
+    background: #f5b726;
+    padding-top: 15px;
+    margin: 0;
+    float: right;
+    box-sizing: border-box;
+}
+#home-main-2 h1{
+    color: white;
+    margin: 0;
+}
+#home-main-2 p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 40px 0 50px;
+    margin-bottom: 25px;
+    color: white;
+}
+#home-main-2 #text{
+    text-align: center;
+    padding: 0 !important;
+}
+#home-main-2 img{
+    height: 200px;
+    width: auto;
+}
+#button a{ /* Przycisk "skontaktuj sie "*/
+ text-decoration: none;
+ color: white;
+ background: transparent;
+ font-size: 23px;
+ border: white solid 3px;
+ padding: 10px 10px 10px 0;
+ border-radius: 12px;
+}
+
+#button a:hover{
+    background-color:white;
+    color: #ffcb4f;
+    transition-duration: 0.3s;
+}
+
+#home-main-3{
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    background-image: url(../Images/gt86.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Efekt przewijania się tła*/
+    background-position: center;
+    margin: 0 ;
+    z-index: 1;
+}
+#main-3-content_box-background{
+    background: rgba(0, 0, 0, 0.8);
+    filter: alpha(opacity=70); /* Dla IE8 i starszych*/
+    width: 100%;
+    height: 750px;
+}
+#main-3-content_box{
+    color: #fff;
+    height: 750px;
+    padding-top: 130px;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+/* przycisk oferta na głownej */
+#button-2{
+    margin-top: 100px;
+}
+#button-2 a{
+    text-decoration: none;
+    color: white;
+    border: white solid 3px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+}
+
+#button-2 a:hover{
+    color: #f5b726;
+    background: #f5b726;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    transition-duration: 0.3s;
+}
+/* Podstrona  ofertą*/
+#main-offer{
+    width: 100%;
+    height: 100%;
+}#offer-1{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+}
+#offer-1 img{
+     width: 80%;
+     height: auto;
+}
+.offer-1-panel{
+    width: 50%;
+}
+.offer-1-panel h1{
+    margin: 0;
+}
+.offer-1-panel h3{
+    margin: 0;
+    padding-top: 10px;
+}
+.offer-1-panel p{
+    margin: 0;
+}
+
+#offer-2{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+    min-height: 50vh;
+}
+#offer-2 img{
+     width: 80%;
+     height: auto;
+}
+
+#offer-3{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+    min-height: 50vh;
+}
+#offer-3 img{
+     width: 80%;
+     height: auto;
+}
+#offer-4{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+    min-height: 50vh;
+}
+#offer-4 img{
+     width: 80%;
+     height: auto;
+}
+#offer-5{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+    min-height: 50vh;
+}
+#offer-5 img{
+     width: 80%;
+     height: auto;
+}
+
+#offer-6{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+    min-height: 50vh;
+}
+#offer-6 img{
+    width: 80%;
+    height: auto;
+}
+#offer-7{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+    min-height: 50vh;
+}
+#offer-7 img{
+    width: 80%;
+    height: auto;
+}
+#offer-8{
+    width: 100%;
+    background-color: rgba(244, 248, 222, 0.5);
+    display: flex;
+    margin-top: 2vh;
+    min-height: 50vh;
+}
+#offer-8 img{
+    width: 80%;
+    height: auto;
+}
+/* Podstrona - Kontakt */
+#main-contact{
+    width: 100%;
+    height: 100%;
+}
+#contact-phone{
+    background: #f5b726;
+    width: 50%;
+    margin: 5% 25%;
+    min-height: 15vh;
+    border: #f5b726 solid 3px;
+    border-radius: 75px;
+    z-index: 1;
+}
+#contact-phone span{ /* animowana ikona telefonu przy infolinia na podstronie z kontaktem*/
+    color: white;
+    position: absolute;
+    font-size: 7vh;
+    margin-top: calc(4vh - 10px); /* po ustawieniu za pomocą paddingu ikony telefonu na tle, funkcją calc która oblicza, wyruwanłem ją w całym divie na srodek z powrotem*/
+    margin-left: 2vw;
+    animation: 0.2s rotation infinite, 2s size infinite; /* animacja z poruszaniem się telefonu oraz jego zwiększaniu tzw. ring phone*/
+    border-radius: 100%; /* tło animacji ma kształt koła*/
+    padding: 10px 0 0 0;  /* wyśrodkowanie telefonu na tle*/
+    animation-timing-function:ease-out;
+}
+
+@keyframes rotation { /* kontrola animacji potrząsania/ porzuszania się ikony na boki*/
+    0% { margin-left: 2vw; }
+    50% { margin-left: 2.1vw; }
+    100% { margin-left: 1.9vw; }
+}
+@keyframes size { /* kontrola animacji powiększania się ikony telefonu wraz z jej tłem oraz zmiana koloru tła*/
+    0% { transform:scale(1, 1); background: #ffd574; }
+    50% { transform:scale(1.2, 1.2);background: #ffd574; }
+    100% { transform:scale(1, 1); }
+    
+}
+
+#contact-phone h2{
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+#contact-phone p{
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 23px;
+}
+
+#contact-mail{
+    background-image: url(../Images/mail-img.png);
+    background-size: 25vw auto;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: 0 0 5% 25%;
+    min-height: 15vh;
+    border-radius: 75px;
+    z-index: 1;
+}
+#contact-mail #mail-background{
+    background: rgba(0, 0, 0, 0.4);
+    height: 15vh;
+    border-radius: 75px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#contact-mail h2{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.6em 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+#contact-mail p{
+    margin: 0;
+    text-align: center;
+    font-size: 27px;
+}
+#contact-mail-link{
+    color: white;
+    text-decoration: none;
+}
+#contact-mail:hover  #mail-background{
+    background: rgba(227, 66, 52, 0.6);
+    transition-duration: 0.3s;
+}
+
+#contact-location{
+    background-image: url(../Images/location-graph.png);
+    background-size: 10vw auto;
+    background-position:bottom right;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: 5% 25%;
+    text-align: center;
+}
+#location-background{
+    background: rgba(245, 183, 38, 0.8);
+    padding-bottom: 20vh;
+    padding: 0 0 10vh 0;
+    border-radius: 100px;
+}
+#location-background h2{
+    margin: 0;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 5vh;
+}
+#location-background p{
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 27px;
+}
+/*Strona - O NAS*/
+#about-main{
+    margin: 0 10%;
+    margin-bottom: 120px;
+}
+#about-us{
+    margin-top: 55px;
+    border:#ffcb4f solid 4px ;
+    box-sizing: border-box;
+    padding: 30px 50px;
+}
+#about-us-we-are{
+    color: #f5b726;
+    font-size: 26px !important; 
+    text-align: center !important;
+}
+#about-us h2{
+    text-align: center;
+    margin: 0;
+}
+#about-us p{
+    font-size: 18px;
+    text-align: justify;
+    color: black; 
+}
+#about-us-company{
+    color: #f5b726;
+}
+
+#about-us-img{
+    text-align: center;
+    margin-top: 55PX;
+}
+#about-us-img img{
+    width: 230px;
+    height: auto;
+}
+
+#about-why-us{
+    margin-top: 55px;
+    border:#ffcb4f solid 4px ;
+    box-sizing: border-box;
+    padding: 30px 50px;
+}
+#about-why-us h2{
+    text-align: center;
+    margin: 0;
+}
+#about-why-us p{
+    font-size: 18px;
+    text-align: justify; 
+    color: black;
+}
+
+/* podstrona ze współpracą */
+#main-collab{
+    background: url(../Images/hand-shake.png);
+    background-repeat:no-repeat ;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+#main-collab-1{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 70vh;
+    margin: 5% 0 5% 0;
+    width: 80vw;
+    left: 10vw;
+    position: relative;
+}
+#main-collab-1 h1{
+    text-align: center;
+    padding-top: 10vh;
+    margin: 0 0 45px 0;
+    font-size: 2.5rem;
+}
+#main-collab-1 p{
+    text-align: center;
+    width: 70vw;
+    font-size: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+#main-collab-1 ul{
+    padding-left: 25%;
+}
+#button-3{
+    text-align: center;
+}
+#button-3 a{
+    text-decoration: none;
+    color: white;
+    border: white solid 3px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1.8rem; 
+}
+#button-3 a:hover{
+    color: #f5b726;
+    background: #f5b726;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    transition-duration: 0.3s;
+    }
+#collab-list-title{
+    margin-left: 25%;
+    padding: 0;
+}
+
+/* Uniwersalne dla każdej z podstron*/
+footer{
+    width: 100%;
+    position :absolute;
+    bottom: 0;
+    background: #a0a0a0;
+    min-height: 50px;
+}
+.footer-panels{
+    width: 100%;
+    display: flex;
+    border-bottom: #ffcb4f dotted 4px;
+}
+.footer-panel{
+    width: 50%;
+}
+.footer-panel h2{
+    margin: 0;
+    padding: 5px 0 0 15px;
+    color: white;
+}
+#foot-list{
+    color: #ffcb4f;
+    font-size: 17px;
+}
+#foot-list a{
+    color: white;
+    text-decoration: none;
+}
+#foot-list a:hover{
+    text-decoration: underline white solid;
+}
+#mail{
+    margin: 0;
+}
+#mail a{
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px;    
+}
+#mail a:hover{
+    color: #ffcb4f;
+}
+
+#office{
+    margin-top: 5px;
+}
+
+#last-foot-line{
+    clear: both;
+    padding: 10px 0 10px 0;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    background: #8b8b8b;
+}

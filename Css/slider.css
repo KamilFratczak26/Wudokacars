@@ -1,0 +1,27 @@
+#slider{
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0;
+}
+#slider img{
+    height: auto;
+    margin: 0 0;
+    width:50vw;
+    float: left;
+    padding-right: 50vw;
+    padding:0 25vw;
+}
+#slider2{
+    width: 300vw;
+    position: relative;
+    left: 0;
+    text-align: left;
+    animation: 50s slidy infinite; 
+    margin: 0;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    33% { left: -100vw} 
+    66% { left: -200vw;} 
+    100% { left: 0% }
+}
